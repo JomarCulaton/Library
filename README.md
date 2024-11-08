@@ -82,10 +82,30 @@ The Library  API is structured to simplify core library functions, including use
      }
      ```
 
- **Get All Authors**
-   - **Method**: GET
-   - **Endpoint**: `127.0.0.1/library/public/authors/get`
-   - **Description**: Retrieves a complete list of authors registered in the library.
+ **Update Author**
+   - **Method**: PUT
+   - **Endpoint**: `127.0.0.1/library/public/authors/update/{1}`
+   - **Description**: Modifies an existing author’s information in the system.
+   - **Request Body**:
+     ```json
+     {
+       "name": "Jculaton",
+       "token": "_jwt_token"
+     }
+     ```
+   - **Response**:
+     ```json
+     {
+       "status": "success",
+       "status_message": "Author updated successfully",
+       "access_token": "_jwt_token"
+     }
+     ```
+
+ **Delete Author**
+   - **Method**: DELETE
+   - **Endpoint**: `127.0.0.1/library/public/authors/delete/{1}`
+   - **Description**: Removes an author from the library's database.
    - **Request Body**:
      ```json
      {
@@ -96,14 +116,69 @@ The Library  API is structured to simplify core library functions, including use
      ```json
      {
        "status": "success",
-       "status_message": "Authors retrieved successfully",
-       "data": [
-         {
-           "authorid": 13,
-           "name": "Jculaton"
-         }
-       ],
+       "status_message": "Author deleted successfully",
        "access_token": "_jwt_token"
      }
      ```
 
+### Book Endpoints
+
+ **Add Book**
+   - **Method**: POST
+   - **Endpoint**: `127.0.0.1/library/public/books`
+   - **Description**: Registers a new book in the library catalog, with a specified author.
+   - **Request Body**:
+     ```json
+     {
+       "title": "Book Title",
+       "author_id": 1,
+       "token": "_jwt_token"
+     }
+     ```
+   - **Response**:
+     ```json
+     {
+       "status": "success",
+       "status_message": "Book created successfully",
+       "access_token": "_jwt_token"
+     }
+     ```
+
+ **Update Book**
+   - **Method**: PUT
+   - **Endpoint**: `127.0.0.1/library/public/books/update/{1}`
+   - **Description**: Updates the details of a specific book in the library catalog.
+   - **Request Body**:
+     ```json
+     {
+       "title": "Book Title",
+       "author_id": 1,
+       "token": "_jwt_token"
+     }
+     ```
+   - **Response**:
+     ```json
+     {
+       "status": "success",
+       "status_message": "Book updated successfully",
+       "access_token": "_jwt_token"
+     }
+     ```
+
+ **Delete Book**
+   - **Method**: DELETE
+   - **Endpoint**: `127.0.0.1/library/public/books/delete/{1}`
+   - **Description**: Deletes a specific book from the library's records.
+   - **Request Body**:
+     ```json
+     {
+       "token": "_jwt_token"
+     }
+     ```
+   - **Response**:
+     ```json
+     {
+       "status": "success",
+       "status_message": "Book deleted successfully",
+       "access_token": "_jwt_token"
+     }
