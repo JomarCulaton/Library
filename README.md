@@ -11,6 +11,13 @@ The Library  API is structured to simplify core library functions, including use
 - **Book Management**: Provides endpoints for managing books, including adding, updating, viewing, and deletion.
 - **Secure Access**: Uses JWT tokens for session-based access control, ensuring only authenticated users can access protected endpoints.
 
+## Features
+
+- **User Management**: Manage user accounts with full CRUD capabilities.
+- **Author Management**: Provides endpoints for author-specific actions.
+- **Book Management**: Manage book records, including cataloging and updates.
+- **Token-Based Security**: JWT tokens allow for secure and reliable access control.
+
 
 
 
