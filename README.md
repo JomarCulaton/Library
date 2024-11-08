@@ -18,6 +18,47 @@ The Library  API is structured to simplify core library functions, including use
 - **Book Management**: Manage book records, including cataloging and updates.
 - **Token-Based Security**: JWT tokens allow for secure and reliable access control.
 
+##  API Endpoints
 
+### User Endpoints
+
+ **User Registration**
+   - **Method**: POST
+   - **Endpoint**: `127.0.0.1/library/public/user/register`
+   - **Description**: Creates a new user account in the library system.
+   - **Request Body**:
+     ```json
+     {
+       "username": "Jomar",
+       "password": "Jomar13"
+     }
+     ```
+   - **Response**:
+     ```json
+     {
+       "status": "success",
+       "data": null
+     }
+     ```
+
+ **User Authentication**
+   - **Method**: POST
+   - **Endpoint**: `127.0.0.1/library/public/auth`
+   - **Description**: Logs in a user and issues a JWT access token for secure access to the API.
+   - **Request Body**:
+     ```json
+     {
+       "username": "Jomar",
+       "password": "Jomar13"
+     }
+     ```
+   - **Response**:
+     ```json
+     {
+       "status": "success",
+       "access_token": "jwt_token",
+       "data": null
+     }
+     ```
 
 
