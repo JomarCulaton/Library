@@ -60,5 +60,50 @@ The Library  API is structured to simplify core library functions, including use
        "data": null
      }
      ```
+### Author Endpoints
 
+ **Add Author**
+   - **Method**: POST
+   - **Endpoint**: `127.0.0.1/library/public/authors`
+   - **Description**: Adds a new author to the library's database.
+   - **Request Body**:
+     ```json
+     {
+       "name": "Jculaton",
+       "token": "_jwt_token"
+     }
+     ```
+   - **Response**:
+     ```json
+     {
+       "status": "success",
+       "status_message": "Author created successfully",
+       "access_token": "_jwt_token"
+     }
+     ```
+
+ **Get All Authors**
+   - **Method**: GET
+   - **Endpoint**: `127.0.0.1/library/public/authors/get`
+   - **Description**: Retrieves a complete list of authors registered in the library.
+   - **Request Body**:
+     ```json
+     {
+       "token": "_jwt_token"
+     }
+     ```
+   - **Response**:
+     ```json
+     {
+       "status": "success",
+       "status_message": "Authors retrieved successfully",
+       "data": [
+         {
+           "authorid": 13,
+           "name": "Jculaton"
+         }
+       ],
+       "access_token": "_jwt_token"
+     }
+     ```
 
