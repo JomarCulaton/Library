@@ -1,6 +1,6 @@
 # Library API 
 
-The Library API is a robust system designed to manage the core resources of a library, including users, authors, and books. Built using PHP with the Slim framework, this API streamlines typical library operations like registration, authentication, and resource management through a series of organized endpoints. The API leverages JSON Web Tokens (JWT) for secure user authentication, ensuring that all transactions are safe and accessible only to authorized users. Ideal for libraries of any scale, this API provides the necessary endpoints to easily integrate with other systems or be extended for custom needs.
+The Library API is a robust system designed to manage a library's core resources, including users, authors, and books. Built using PHP with the Slim framework, this API streamlines typical library operations like registration, authentication, and resource management through organized endpoints. The API leverages JSON Web Tokens (JWT) for secure user authentication, ensuring all transactions are safe and accessible only to authorized users. 
 
 ##  Overview
 
