@@ -24,7 +24,7 @@ The Library  API is structured to simplify core library functions, including use
 
  **User Registration**
    - **Method**: POST
-   - **Endpoint**: `127.0.0.1/library/public/user/register`
+   - **Endpoint**: `http://127.0.0.1/library/public/user/register`
    - **Description**: Creates a new user account in the library system.
    - **Request Body**:
      ```json
@@ -43,7 +43,7 @@ The Library  API is structured to simplify core library functions, including use
 
  **User Authentication**
    - **Method**: POST
-   - **Endpoint**: `127.0.0.1/library/public/auth`
+   - **Endpoint**: `http://127.0.0.1/library/public/auth`
    - **Description**: Logs in a user and issues a JWT access token for secure access to the API.
    - **Request Body**:
      ```json
@@ -64,7 +64,7 @@ The Library  API is structured to simplify core library functions, including use
 
  **Add Author**
    - **Method**: POST
-   - **Endpoint**: `127.0.0.1/library/public/authors`
+   - **Endpoint**: `http://127.0.0.1/library/public/authors`
    - **Description**: Adds a new author to the library's database.
    - **Request Body**:
      ```json
@@ -84,7 +84,7 @@ The Library  API is structured to simplify core library functions, including use
 
  **Update Author**
    - **Method**: PUT
-   - **Endpoint**: `127.0.0.1/library/public/authors/update/{1}`
+   - **Endpoint**: `http://127.0.0.1/library/public/authors/update/{1}`
    - **Description**: Modifies an existing author’s information in the system.
    - **Request Body**:
      ```json
@@ -104,7 +104,7 @@ The Library  API is structured to simplify core library functions, including use
 
  **Delete Author**
    - **Method**: DELETE
-   - **Endpoint**: `127.0.0.1/library/public/authors/delete/{1}`
+   - **Endpoint**: `http://127.0.0.1/library/public/authors/delete/{1}`
    - **Description**: Removes an author from the library's database.
    - **Request Body**:
      ```json
@@ -125,7 +125,7 @@ The Library  API is structured to simplify core library functions, including use
 
  **Add Book**
    - **Method**: POST
-   - **Endpoint**: `127.0.0.1/library/public/books`
+   - **Endpoint**: `http://127.0.0.1/library/public/books`
    - **Description**: Registers a new book in the library catalog, with a specified author.
    - **Request Body**:
      ```json
@@ -146,7 +146,7 @@ The Library  API is structured to simplify core library functions, including use
 
  **Update Book**
    - **Method**: PUT
-   - **Endpoint**: `127.0.0.1/library/public/books/update/{1}`
+   - **Endpoint**: `http://127.0.0.1/library/public/books/update/{1}`
    - **Description**: Updates the details of a specific book in the library catalog.
    - **Request Body**:
      ```json
@@ -167,7 +167,7 @@ The Library  API is structured to simplify core library functions, including use
 
  **Delete Book**
    - **Method**: DELETE
-   - **Endpoint**: `127.0.0.1/library/public/books/delete/{1}`
+   - **Endpoint**: `http://127.0.0.1/library/public/books/delete/{1}`
    - **Description**: Deletes a specific book from the library's records.
    - **Request Body**:
      ```json
