@@ -182,3 +182,14 @@ The Library  API is structured to simplify core library functions, including use
        "status_message": "Book deleted successfully",
        "access_token": "_jwt_token"
      }
+## Authentication
+
+Most endpoints require a JWT token included in the request body as `token`. After successful authentication, each request returns a refreshed access token.
+
+## Note
+The access_token should be included in the body of requests that require authentication, and a new token will be returned with each successful authenticated request.
+
+## Author
+
+- **Author Name**: Jomar S. Culaton
+- **Contact**: culatonjomar@gmail.com
